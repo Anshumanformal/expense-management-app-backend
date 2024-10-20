@@ -34,7 +34,7 @@ app.use("/api/v1/users", userRoutes)
 // transaction routes
 app.use("/api/v1/transactions", transactionRoutes)
 
-const PORT = process.env.PORT || 8080
+const PORT = 8080
 
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`.bgWhite)

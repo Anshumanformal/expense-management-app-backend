@@ -19,6 +19,10 @@ app.use(express.json())
 
 app.use(cors())
 
+app.get("/", (req, res)=> {
+    res.send('Server is OK')
+})
+
 // Static files
 // app.use(express.static(path.join(__dirname, '../client/build')))
 // app.get("*", (req, res)=> {
